@@ -21,7 +21,7 @@ a comprehensive introduction to the principles and tools for managing and mining
   - HTML Editors
   - HTML Basic
   - HTML Elements
-  - HTML Attriutes
+  - HTML Attributes
   - HTML Headings
   - HTML Paragraphs
   - HTML Styles
@@ -32,4 +32,4 @@ a comprehensive introduction to the principles and tools for managing and mining
   - HTML Images
   - HTML Lists
 3. Create a web page using headings, lists, images, links and paragraphs. The web page can be about any subject you like, such as a book, a person, a movie, or an event. 
-4. Read [the first chapter of the Git Book](https://git-scm.com/book/en/v2)(1.1 to 1.8). Follow the instructions in 1.6 to set up Git.
+4. Read [the first chapter of the Git Book](https://git-scm.com/book/en/v2) (1.1 to 1.8). Follow the instructions in 1.6 to set up Git.
