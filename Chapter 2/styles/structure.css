@@ -1,0 +1,41 @@
+/* the styles for the elements */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	background-color: yellow;
+	color: blue;
+}
+
+a { font-weight: bold; }
+a:link { color: #931420; }
+a:visited { color: #f2972e; }
+a:hover, a:focus { color: blue; }
+
+ul { line-height: 1.5; }
+li, p { font-size: 95%; }
+em { font-weight: bold; }
+
+/* the styles for the header */
+header img { float: left; }
+header h2 {
+	font-size: 90%; 
+	color: #f2972e;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+}
+
+/* the styles for the main content */
+main { clear: left; }
+main h1 { font-size: 170%; }
+main h2 { font-size: 130%; }
+
+main p.indent { text-indent: 2em; }
+main a.accessed { color: gray; }
+
+/* the stules for the footer */
+footer p {
+	font-size: 10%;
+	text-align: right;
+	font-color: blue;
+}
+
