@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- External CSS -->
+<!-- Examples of CSS selectors -->
+<html lang="en-US">
+<head>
+	<title>MDA 610 Open for Registration</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<!-- Comment Out 
+	  <link rel="stylesheet" href="styles/appearance.css">
+    -->
+    <style>
+      /* embedded CSS rule sets */
+
+      /* type selector */
+      /*
+      h2 {
+      	color: blue;
+      }
+
+      p {
+      	text-indent: 2em;
+      }
+      */
+
+      /* a #id selector */
+      /*
+      #why {
+      	text-align: center;
+      	color: blue;
+      }
+      */
+
+      /* a .class selectors */
+      /*
+      .indent {
+      	text-indent: 1em;
+      	color: blue;
+      }
+      */
+
+      /* relational selectors */
+      /*
+      footer p {
+      	color: blue;
+      	font-size: 50%;
+      }
+       
+      #content li {
+      	font-size: 200%;
+      }
+
+      #content > h2 {
+      	color: green;
+      }
+
+      h2 + p {
+      	color: purple;
+      }
+
+      h2 ~ p {
+      	font-weight: bold;
+      }
+      */
+
+      /* attribute selector */
+      /*
+	  a[target] {
+      	color: green;
+      }
+
+      a[target="_blank"] {
+      	font-size: 150%;
+      }
+      */
+
+      /* combinations of selectors */
+      /*
+      ul.nolinks {
+        color: #ff0000;
+      }
+
+      footer, .indent {
+      	text-indent: 2em;
+      }
+      */
+
+      /* pseudo-classes */
+      /*
+      a:link {
+      	color: green;
+      }
+      a:visited {
+      	color: gray;
+      	font-size: 75%;
+      }
+      a:hover {
+      	color: red;      
+      }
+      p:first-child {
+      	color: blue;
+      }
+      p:last-child {
+      	font-style: italic;
+      }
+      p:nth-child(3) {
+      	text-align: center;
+      }
+      */
+
+      /* conflicts */
+      /*
+      h2 {
+      	color: blue;
+      }
+      h2:first-child {
+      	color: green;
+      }
+      #content h2 {
+      	color: red;
+      }
+      */
+    </style>
+</head>
+<body>
+	<header>
+		<img src="coding.jpg" alt="Coding Logo" width="80">
+		<h2>Master of Data Analytics and Strategic Business Intelligence Program</h2>
+		<h1>MDA 610 Data Management and Mining</h1>
+		<h2>Now Open for Spring Registration</h2>
+	</header>
+	<main>
+		<section id="overview">
+			<h2>Course Description</h2>
+			<p>The goal of this 3-credit course is to provide a comprehensive introduction to the principles and tools for managing and mining data, covering database management, data retrieval, data preprocessing, data analysis and mining.</p>	
+		</section>
+		<section id="content">
+			<h2>What You'll Learn</h2>
+			<ul class="nolinks">
+				<li>Web development</li>
+				<li>Database management</li>
+				<li>Data visulization</li>
+				<li>Data analysis</li>
+				<li>Data mining</li>
+			</ul>
+		</section>
+		<section id="proglangs">
+			<h2>Programming Languages</h2>
+			<nav>
+				<ul class="withlinks">
+					<li><a class="accessed" href="https://www.w3.org/html/" target="_blank">HTML5</a></li>
+					<li><a class="accessed" href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CSS3</a></li>
+					<li><a href="http://www.ecmascript.org/" target="_blank">JavaScript</a></li>
+					<li><a href="https://www.mysql.com/" target="_blank">MySql</a></li>
+					<li><a href="https://www.python.org/" target="_blank">Python</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="why">
+			<h2>Why Register?</h2>
+			<p>You should register if you want to understand how data can be explored to uncover hidden informaiton, learn the data mining and management techniques to effectively improve business performance, or get into the data science field.</p>
+			<p class="indent">This is a 3-credit graduate-level course open to all majors. </p>
+			<p class="indent">See you in class!</p>
+		</section>
+		<p><em>Contact Dr. Jiamin Wang by <a href="tel:516-299-3914">phone </a> or <a href="mailto:jiamin.wang@liu.edu">email</a> for more information.</em></p>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2019 Long Island University.</p>
+	</footer>
+</body>
+</html>

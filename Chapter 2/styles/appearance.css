@@ -36,6 +36,6 @@ main a.accessed { color: gray; }
 footer p {
 	font-size: 10%;
 	text-align: right;
-	font-color: blue;
+	color: blue;
 }
 

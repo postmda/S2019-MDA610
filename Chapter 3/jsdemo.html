@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Demo</title>
+	<script>
+		function sayHello () {
+			var name =
+			document.getElementById("name").value;
+			var message = "<h2>Hello " + name + "!</h2>";
+  			document.getElementById("content")
+  			.innerHTML = message;
+
+  			if (name === "student") {
+  				var title = 
+  				document
+  				.querySelector("#title")
+  				.textContent;
+  				title = "Everyone Loves " + title;
+  				document
+  				.querySelector("h1")
+  				.textContent = title;
+  			}
+  			else {
+  				var title = 
+  				document
+  				.querySelector("#title")
+  				.textContent;
+                title = title.replace("Everyone Loves ", "");
+                document
+  				.querySelector("h1")
+  				.textContent = title;
+  			}
+  		}
+</script>
+</head>
+<body>
+  <p>
+  	<script>
+  		var today = new Date();
+  		document.write("Today is ");
+  		document.write(today.toDateString());
+  	</script>
+  </p>
+  <hr>
+  <h1 id="title">JavaScript</h1>
+  <p>
+    Say hello to 
+    <input id="name" type="text">
+    <button onclick="sayHello();">
+      Say it!
+    </button>
+  </p> 
+  <div id="content"></div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- A toy html document to demonstrate CSS --> 
+<head>
+	<!-- normalize.css provides browser compatibility -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<!-- an embedded CSS sheet -->
+	<style>
+	  
+	  body
+	  {
+	  	margin: 2em;
+	  	padding: 1em;
+	  	border: 1em solid orange;
+	  }
+
+	  .blue {
+	  	color: blue;
+	  }
+
+	  .right {
+	  	text-align: right;
+	  }
+
+	  .big {
+	  	font-size: 150%;
+	  }
+
+	  .italic {
+	  	font-style: italic;
+	  }
+
+	  .bold {
+	  	font-weight: bolder;
+	  }
+
+	  .green_border {
+	  	border: green solid .5em;
+	  }
+
+	  .padding10 {
+	  	padding: 10em;
+	  }
+
+	  .fw300 {
+	  	width: 300px;
+	  }
+
+	  .rw40 {
+	  	width: 40%;
+	  }
+
+	  .rw30 {
+	  	width: 30%;
+	  	margin-left: 10%;
+	  }
+
+	  .margin4and20p {
+	  	margin: 4em 20%;
+	  }
+
+      .brown_border {
+      	border: brown dashed .1em;
+      }
+
+      .floating_left {     	
+      	float: left;
+      }
+
+	  .floating_right {
+      	float: right;
+      }
+
+      .clear {
+      	clear: both;
+      }
+
+      .relpos {
+      	position: relative;
+      	width: 500px;
+      	height: 200px;
+      	top: 100px;
+      	left: 450px;
+      }
+
+      .abspos {
+      	position: absolute;
+      	border: silver solid 0.1em;
+      	width: 250px;
+      	height: 100px;
+      	top: 75px;
+      	right: 0;
+      }
+	</style>
+	<title>Basic CSS Properties</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<img class="floating_left" src="coding.jpg" alt="Coding Logo" width="200">
+		<h1>CSS For a Web Page</h1>
+		<h2>Appearance and Page Layout</h2>
+	</header>
+	<main>
+		<section>
+			<h3>Formatting Text</h3> 
+				<p class="blue right">This paragraph is in blue and right-aligned.</p>
+				<p class="big">This paragraph uses a larger font size.</p>
+				<p class="italic bold">This paragraph is italicized and bold.</p>
+        </section>	
+		<section>
+			<h3>Spacing and Borders</h3>
+				<p class="green_border italic padding10">All paragraphs in this section have a green border. This paragraph has a padding of 10em.</p>  
+				<p class="green_border fw300">This paragraph has a fixed width of 300 pixels. </p>
+				<p class="rw40 green_border">This paragraph has a relative width of 40%.</p>
+				<p class="margin4and20p green_border">This paragraph has a top-bottom margin of 4em and a left-right margin of 20%.</p>
+        </section>
+        <section>
+			<h3>Page Layout</h3>
+			<p class="brown_border rw40 floating_left">This paragraph is floated to the left. </p>  
+			<p class="brown_border rw40 floating_right">This paragraph is floated to the right. </p>
+			<p class="brown_border clear">This paragraph will not fill in the space between the above two paragraphs. </p>
+			<div class="brown_border relpos">
+				<p>This block element is positioned relative to its position in the normal flow.</p>
+				<div class="abspos"><p>This paragraph has an absolute position.</p>
+				</div>
+			</div>
+        </section>	
+	</main>
+	<footer>
+		<p>&copy; Copyright 2019 Long Island University.</p>
+	</footer>
+</body>
+</html>
