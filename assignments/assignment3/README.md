@@ -13,7 +13,7 @@
   - CSS Pseudo-class
 2. Take Post-class Quiz 2 on Blackboard.
 3. Use the [W3C Markup Validation Service](http://validator.w3.org) to validate the GitHub page you published in Assignment 2. 
-4. Download and unzip [``info.zip``](https://github.com/postmda/mda610/assignments/assignment3/info.zip). 
+4. Download and unzip [``info.zip``](https://github.com/postmda/MDA610/blob/master/assignments/assignment3/info.zip). 
 5. Use Google Chrome to view ``courseinfo_before.html``. Right click in Chrome and select "View page source" to view the HTML source code.
 6. Next, click the link that refers to the external CSS file ``normalize.css`` to view the CSS code. 
 7. Rename ``courseinfo_before.html`` as ``courseinfo.html`` and embed the following CSS rule sets in the ``head`` section of the HTML document. 
