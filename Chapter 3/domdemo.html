@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<title>Document Object Model</title>
+	<style>
+	  .notes, .par {
+         border: solid 2px yellow;
+         margin: 10px;
+         padding: 10px;
+	  }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Simple HTML</h1>
+	</header>
+	<div id="content">
+		<p>This is a <i>simple</i> HTML file.</p>
+		<div class="notes">
+			<p>It is used to illustrate the Document Object Model (DOM), which describes the structure of an HTML document and is at the heart of interacting with the browser.</p>
+			<p>Conceptually, the DOM is a tree. The <i>document</i> is the root node with the <i>html</i> element as a child. The <i>html</i> element (<i>document.documentElement</i>), in turn, has two children: the <i>head</i> element (<i>document.head</i>) and the <i>body</i> element (<i>document.body</i>).</p>
+			<p>Every node in the DOM tree is an instance of the <i>Node</i> class. Each <i>Node</i> object has a <i>parentNode</i> property and a <i>childNodes</i> property.</p>
+			<p>Every node also has the properties <i>nodeName</i> and <i>nodeType</i>. The types of nodes primarily used are <i>Node.ELEMENT_NODE</i> for HTML elements and <i>Node.TEXT_NODE</i> for text contents within HTML elements.</p>
+			<p>The DOM provides &ldquo;get&rdquo; methods to quickly locate specific HTML elements. The document methods <i>querySelector</i> and <i>querySelectorAll</i> enable you to use CSS selectors. Each element has two properties, <i>textContent</i> and <i>innerHTML</i> that allow you to access and change the element's content.</p>
+		</div>
+	</div>
+	<script>
+	    // the number of child nodes for the root node
+		/* console.log(document.childNodes.length);
+        */
+
+		// the number of child nodes for the body element
+		/* console.log(document.body.childNodes.length);
+        */
+
+        // name of each child node for the body element
+		/* for(let node of document.body.childNodes)
+		{
+			console.log(node.nodeName);
+		} 
+		*/
+
+		// the HTML code in the header element
+		/* console.log(document.body.childNodes[1].innerHTML);
+        */
+
+		// retrieve and revise the text content of the h1 element
+        /* console.log(document.body.childNodes[1].childNodes[1].textContent);
+        document.body.childNodes[1].childNodes[1].textContent = "Simple HTML and Javascript"; 
+        */
+
+        // set the font color of each h1 element to blue
+        /* console.log(document.getElementsByTagName("h1").length);
+        document.getElementsByTagName("h1")[0].setAttribute("style", "color: blue;");
+        */
+
+        // the tag of the element with an id of "content"
+        /* console.log(document.getElementById("content").nodeName);    
+        */
+
+        // the tag of each child node for the element with a class of "notes"
+        /* console.log(document.getElementsByClassName("notes")[0].childNodes.length);
+        for(let node of document.getElementsByClassName("notes")[0].childNodes)
+        {
+        	console.log(node.nodeName);
+        }
+        */
+
+        // any p element that is a child of an element with a class of "notes"
+        /* console.log(document.querySelectorAll(".notes > p").length);
+        for(let node of document.querySelectorAll(".notes > p"))
+        {
+        	node.classList.add("par");
+        }      
+        */
+	</script>
+</body>
+</html>
