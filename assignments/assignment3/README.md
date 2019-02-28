@@ -21,7 +21,7 @@
   - For any ``a`` element assigned to the "accessed" class or any link that has been visited, the font color is set to gray. 
   - For any link that hasn't been visited, the font color is set to lime. 
   - For any unordered list, the font color is set to olive.
-  - For any ``p`` element or any ordered list, the font size is 80% of the size of its parent eleemnt.
+  - For any ``p`` element or any ordered list, the font size is 80% of the size of its parent element.
   - For any ``em`` element, the font is bold.
   - Any ``img`` element that is a descendant of a ``header`` element is floated left. 
   - For any ``h2`` element that is a descendant of a ``header`` element, the font-size is 90% of the size of its parent element, the font color is set to green, and the text is center-aligned. 
