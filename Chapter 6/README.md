@@ -1,1 +1,1 @@
-## Chapter 6 Python and Numpy
+## Chapter 6 Python
